@@ -10,17 +10,26 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import environ
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env()
+env.read_env(BASE_DIR / '.env', overwrite=True)
+
+# Ключи от API Stripe
+SK_STRIPE_KEY = env('SK_STRIPE_KEY')
+PK_STRIPE_KEY = env('PK_STRIPE_KEY')
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*xanyj!zy$4#to$5ic@k^@4ficm(uulbg-0n*6ndcac_j^k3+t'
+SECRET_KEY = env('SECRET_DJANGO_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -64,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'app_pay.context.stripe_api_public_key',
             ],
         },
     },

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All items</title>
+</head>
+<body>
+
+<h1>All items</h1>
+
+    <ul>
+        {% for item in item_list %}
+            <li>{{ item.id }} - <a href="{% url 'item' item.id %}">{{ item.name }}</a> <b>{{ item.price|floatformat:2 }}$</b>  < {{ item.description }}  ></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
