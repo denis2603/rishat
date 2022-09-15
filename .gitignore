@@ -6,6 +6,11 @@ __pycache__/
 #Pycharm files
 .idea/*
 
+# Migrations
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+
 # C extensions
 *.so
 

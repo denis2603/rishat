@@ -24,7 +24,6 @@ SK_STRIPE_KEY = env('SK_STRIPE_KEY')
 PK_STRIPE_KEY = env('PK_STRIPE_KEY')
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 

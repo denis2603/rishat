@@ -1,4 +1,3 @@
-
 from django.http import HttpRequest, JsonResponse
 from django.views.generic import DetailView, ListView
 from django.shortcuts import get_object_or_404

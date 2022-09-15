@@ -23,7 +23,7 @@ class StripeManager:
     @staticmethod
     def get_session_id(request: HttpRequest, item) -> dict:
 
-        success_url = cancel_url = request.build_absolute_uri(reverse("stub_page"))
+        success_url = cancel_url = request.build_absolute_uri(reverse("main_page"))
 
         stripe_session = stripe.checkout.Session.create(
             success_url=success_url,

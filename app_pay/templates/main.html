@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+
+<h1> Тестовое задание</h1>
+
+<p>Django + Stripe API бэкенд</p>
+
+<p><b>Реализованы страницы:</b></p>
+
+<ul>
+    <li><a href="{% url 'main_page' %}">Эта страница</a></li>
+    <li><a href="{% url 'admin:index' %}">Панель администратора</a></li>
+    <li><a href="{% url 'item_list' %}">Список всех продуктов</a></li>
+    <li><a href="{% url 'item' 1 %}">Пример страницы товара для продукта №1</a></li>
+    <li><a href="{% url 'buy_page' 1 %}">Получение id сессии для покупки товара №1</a></li>
+</ul>
+
+<b>Выполнил:</b>
+<p><i>Желтиков Денис</i></p>
+<p><i>тел. +79116098538</i></p>
+<p><a href="mailto:den.ari@yandex.ru"><i>den.ari@yandex.ru</i></a></p>
+<p><a href="https://t.me/denis_2603"><i>Телеграмм</i></a></p>
+
+</body>
+</html>
