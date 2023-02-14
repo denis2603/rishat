@@ -20,7 +20,7 @@
     Выполнить команду:  
     
     ```commandline
-    docker run -it -p 8000:8000 denis2603/test:rishat
+    docker run -it -p 8000:8000 engry995/rishat
     ```  
 В браузере перейти по адресу [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
@@ -37,7 +37,7 @@
 
 2. Скопировать файлы проекта
     ```commandline
-    git clone https://github.com/denis2603/rishat
+    git clone https://github.com/engry995/rishat
     ```
     Эта команда создаст папку `rishat`  и сохранит в ней все требуемые файлы.
    
@@ -59,7 +59,7 @@ SECRET_DJANGO_KEY изменить на свой или оставить без 
     SECRET_DJANGO_KEY='django-insecure-----------------------------------------'
     ```
 
-5. Для создания базы данный выполнить следующие команды:
+5. Для создания базы данных выполнить следующие команды:
 
     ```bash
     python manage.py makemigrations
