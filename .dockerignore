@@ -3,4 +3,8 @@
 /.git/
 /__pycache__/
 Dockerfile
+README.md
 .env
+.env.template
+.dockerignore
+.gitignore
